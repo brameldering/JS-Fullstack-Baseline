@@ -1,10 +1,10 @@
 # RandomIdeas App
 
-This is a fullstack application for sharing random ideas. It is a project in my **Modern JS From The Beginning** course.
+This is a fullstack application for sharing random ideas.
 
 This app includes a Node.js/Express REST API that uses MongoDB for a database. The client-side is built with Webpack.
 
-<img src="assets/screen.png">
+<img src="frontend/assets/screen.png">
 
 ## Usage
 
@@ -13,8 +13,9 @@ This app includes a Node.js/Express REST API that uses MongoDB for a database. T
 Install dependencies on the front-end and back-end
 
 ```bash
+cd backend
 npm install
-cd client
+cd frontend
 npm install
 ```
 
@@ -35,7 +36,7 @@ Visit `http://localhost:5000`
 ### Front-end/Webpack Dev Server
 
 ```bash
-cd client
+cd frontend
 npm run dev
 ```
 
@@ -44,7 +45,7 @@ Visit `http://localhost:3000`
 To build front-end production files
 
 ```bash
-cd client
+cd frontend
 npm run build
 ```
 
@@ -52,9 +53,10 @@ The production build will be put into the `public` folder, which is the Express 
 
 ### Environment Variables
 
-Rename `.env-example` to `.env` and add your MongoDB URI to the `.env` file
+Add your Application Server PORT and the MongoDB URI to the `.env` file
 
 ```
+PORT=application_server_port
 MONGO_URI=your_mongodb_uri
 ```
 
